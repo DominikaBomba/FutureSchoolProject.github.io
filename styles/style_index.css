@@ -1,0 +1,33 @@
+/*blocks, div in article - style*/
+#blocks{
+    margin-top: 2vh;
+    width: 70%;
+    
+}
+#blocks > div{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    margin-bottom: 10%;
+    padding: 5%;
+}
+#blocks > div > div:first-of-type{
+    width: 70%;
+    padding: 3%;
+}
+#blocks > div > div:nth-of-type(2){
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 3%;
+    padding-left: 0;
+}
+#blocks h3{
+    font-size: 200%;
+}
+img{
+   width: 100%;
+}

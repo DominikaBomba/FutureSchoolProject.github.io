@@ -1,0 +1,68 @@
+<!doctype>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title> School of the future</title>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <link rel="stylesheet" type="text/css" href="../styles/style_gallery.css">
+    </head>
+    <body> 
+        <main> 
+        
+            <section id="menu"> 
+                <ol> 
+                    <li><a href="index.html"> Main </a></li>
+                    <li><a href="gallery.html"> Gallery </a></li>
+                    <li><a href="about.html"> About us </a></li>
+                    <li><a href="3d.html"> 3D </a></li>
+                </ol>
+            </section>
+
+          
+            
+            <article id="article">
+                <div id="header">
+                    <h1> Future  </h1>
+                    <h2> School </h2>
+                    <h3> Gallery</h3>
+                </div>
+                <div id="blocks"> 
+                
+                    <div id="bleft"> 
+                        <img alt="Projects of classrooms" src="images/example.png" >
+                        <img alt="Projects of classrooms" src="../images/classroom1.jpg">
+                        <img alt="Projects of classrooms" src="../images/classroom2.jpg">
+                        <img alt="Projects of classrooms" src="../images/example.png">
+                        <img alt="Projects of classrooms" src="../images/classroom3.jpg">
+                        <img alt="Projects of classrooms" src="../images/classroom4.jpg">
+                        <img alt="Projects of classrooms" src="../images/classroom1.jpg">
+                        <img alt="Projects of classrooms" src="../images/classroom2.jpg">
+                        <img alt="Projects of classrooms" src="../images/classroom3.jpg">
+
+
+                    </div>
+                    <div id="bright"> 
+                        <img id="rimage" src="images/classroom2.jpg">
+                    </div>
+                </div>
+            </article>
+            
+            <footer> 
+            
+            
+            </footer>
+        </main>
+        <script> 
+            let galleryImages = document.querySelectorAll("#bleft>img");
+            for(let i of galleryImages){
+                i.addEventListener("click", ()=> {
+                    rimage.setAttribute("src", i.getAttribute("src"));
+                    console.log(i.getAttribute("src"));
+                })
+            
+            
+            }
+        </script>
+    </body>
+
+</html>

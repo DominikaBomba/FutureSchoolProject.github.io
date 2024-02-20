@@ -1,0 +1,14 @@
+/*blocks, div in article - style*/
+#blocks{
+    margin-top: 2vh;
+    width: 70%;
+    
+}
+#blocks > div{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    margin-bottom: 10%;
+    padding: 5%;
+}
