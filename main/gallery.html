@@ -24,21 +24,22 @@
                 <div id="header">
                     <h1> Future  </h1>
                     <h2> School </h2>
-                    <h3> Gallery</h3>
+                    <h3> GALLERY</h3>
                 </div>
                 <div id="blocks"> 
                 
                     <div id="bleft"> 
-                        <img alt="Projects of classrooms" src="images/example.png" >
-                        <img alt="Projects of classrooms" src="../images/classroom1.jpg">
-                        <img alt="Projects of classrooms" src="../images/classroom2.jpg">
-                        <img alt="Projects of classrooms" src="../images/example.png">
-                        <img alt="Projects of classrooms" src="../images/classroom3.jpg">
-                        <img alt="Projects of classrooms" src="../images/classroom4.jpg">
-                        <img alt="Projects of classrooms" src="../images/classroom1.jpg">
-                        <img alt="Projects of classrooms" src="../images/classroom2.jpg">
-                        <img alt="Projects of classrooms" src="../images/classroom3.jpg">
-
+                        <div id="bleft2">
+                            <img alt="Projects of classrooms" src="images/example.png" >
+                            <img alt="Projects of classrooms" src="../images/classroom1.jpg">
+                            <img alt="Projects of classrooms" src="../images/classroom2.jpg">
+                            <img alt="Projects of classrooms" src="../images/example.png">
+                            <img alt="Projects of classrooms" src="../images/classroom3.jpg">
+                            <img alt="Projects of classrooms" src="../images/classroom4.jpg">
+                            <img alt="Projects of classrooms" src="../images/classroom1.jpg">
+                            <img alt="Projects of classrooms" src="../images/classroom2.jpg">
+                            <img alt="Projects of classrooms" src="../images/classroom3.jpg">
+                        </div>
 
                     </div>
                     <div id="bright"> 
@@ -47,13 +48,14 @@
                 </div>
             </article>
             
-            <footer> 
-            
-            
+           <footer> 
+                <div> Website made by: Dominika Bomba </div>
+                <img src="../images/logo1.png" alt="logo">
+                <img src="../images/logo2.png" alt="logo">
             </footer>
         </main>
         <script> 
-            let galleryImages = document.querySelectorAll("#bleft>img");
+            let galleryImages = document.querySelectorAll("#bleft img");
             for(let i of galleryImages){
                 i.addEventListener("click", ()=> {
                     rimage.setAttribute("src", i.getAttribute("src"));

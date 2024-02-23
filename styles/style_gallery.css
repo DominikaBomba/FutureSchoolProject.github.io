@@ -1,46 +1,74 @@
 
 /*images in gallery*/
     /*left scroll gallery*/
-#blocks{
-    width: 90%;
-    border: 2px solid black;
+h3{
+    font-family: "font_article";
+    color: #F1AEBF;
+    font-size: 2vh;
+    
+    font-weight: 100;
+}
+article{
+    background-color: #C7B8BC ;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    height: 45%;
+}
+#blocks{
+    
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    
+    flex-direction: row;
+    align-items: center;
+    height: 45vh;
+    
 }
 #bleft{
-    border: 2px solid blue;
-    width: 50%;
+    background-color:  #1C233F;
+    width: 45%;
     padding: 1%;
     height: 100%;
-    overflow: scroll;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
+    border-radius: 10px;
     
 }
-#bleft>img{
-    margin: 3%;
-    width: 10vh;
-   
-}
-    /*right scroll gallery*/
-#bright{
-    
-    width: 50%;
-    height: 100%;
+#bleft2{
+    height: 90%;
+    width: 90%;
+    overflow-y: scroll;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; 
+   
+}
+#bleft img{
+    margin: 3%;
+    width: 14vh;
+    
+}
+    /*right scroll gallery*/
+#bright{
+    background-color:  #1C233F;
+    width: 45%;
+    height: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     
 }
 #rimage{
     width: 30vh;
     padding: 3%;
-   
+    
 }
 #blocks{
     margin: 5%;

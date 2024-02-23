@@ -1,3 +1,15 @@
+@font-face{
+    font-family: "font_header";
+    src: url(../images/font_header2.otf);
+}
+@font-face{
+    font-family: "font_article";
+    src: url("../images/font_article.ttf");
+}
+@font-face{
+    font-family: "font_article2";
+    src: url("../images/font_article2.otf");
+}
 body{
     margin: 0;
 }
@@ -18,6 +30,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    background-color: #1D2440;
+    
 }
 #menu > ol{
     list-style-type: none;
@@ -29,53 +44,72 @@ main{
     float: left;
     width: 24%;
     height: 100%;
-    
-       display: flex;
-    justify-content: center;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
     align-items: center;
-}
 
-#menu li:hover a{
-    background-color: red;
- 
+    &:hover{
+    font-weight: 700;
+    }
+}
+#menu li a{
+    color: #F1AEBF;
+    font-family: "font_article";
+    text-decoration: none;
+    font-size: calc(0.5vw + 0.6vh + 5px);
+}
+#menu ol li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 3px;
+    background-color:#F1AEBF ; /* Kolor linii */
+    transform: scaleX(0); /* Początkowo linia niewidoczna */
+    transition: transform 0.4s ease; /* Animacja pojawienia się linii */
+}
+#menu ol li:hover a::after{
+    transform: scaleX(1);
     
 }
 
 /*article - style*/
 article{
     z-index: 1;
-    position: absolute;
-    top: 10%;
+    position: relative;
+    top: 5em;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
     
 }
 /*article - header*/
 #header{
-    background-image: 
+    
     background-size: cover;
     text-transform: uppercase;
     padding: 5%;
     width: 100%;
-   height: 40vh;;
-    border: 2px solid black;
-
+    height: 50vh;
+    background-color: #1D2440;
 }
 
 h1{
     font-size: 12vh;
     margin: 0;
-    margin-bottom: 1%;
+    font-family: "font_header";
+    color: #F1AEBF;
     
 }
 h2{
- 
+ font-family: "font_header";
     font-size: 10vh;
     margin: 0;
+    color: #F1AEBF;
 }
 button{
     margin-top: 3%;
@@ -85,13 +119,47 @@ button{
     max-width: 200px;
     min-width: 100px;
     font-size: 100%;
+    background-color: #F1AEBF;
+    color: #1D2440;
+    transition: all 0.3s linear;
+}
+button:hover{
+    background-color: #1D2440;
+    border: 2px solid #F1AEBF;
     
-    
+}
+button:hover a{
+    color: #F1AEBF ;
 }
 button>a{
     text-decoration: none;
     color: black;
+    font-family: font_article;
+    font-weight: 700;
+    
 }
 #aboutus{
     font-size: 100%;
+    font-family: "font_article";
+    color: #F1AEBF;
+}
+/*footer*/
+footer{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    top: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3E4158;
+    color: #C7B8BC;
+    font-family: "font_article"; 
+    font-weight: 700;
+    
+}
+footer img{
+    height: 90%;
+    
 }

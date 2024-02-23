@@ -1,33 +1,69 @@
+h3{
+    font-family: "font_header";
+}
+article{
+    background-color: #1C233F;
+}
 /*blocks, div in article - style*/
 #blocks{
-    margin-top: 2vh;
-    width: 70%;
     
-}
-#blocks > div{
-    width: 100%;
-    height: auto;
-    background-color: aqua;
-    display: flex;
-    margin-bottom: 10%;
-    padding: 5%;
-}
-#blocks > div > div:first-of-type{
-    width: 70%;
-    padding: 3%;
-}
-#blocks > div > div:nth-of-type(2){
-    width: 30%;
-
+    width: 100vw; 
+    margin: 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-     padding: 3%;
-    padding-left: 0;
+    flex-wrap: wrap;
 }
-#blocks h3{
-    font-size: 200%;
+/*blocks */
+/* small about us*/
+#b1{
+    width: 100%;
+    height: 20vh;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 5%;
+    color: antiquewhite;
+    font-family: "font_article2";
+    background-image: url(../images/3d1.jpg);
+    background-position: left;
+    background-size: cover;
+    text-align: center;
+    transition: all 0.25s ease;
+    &:hover{
+        height: 21vh;
+    }
 }
-img{
-   width: 100%;
+/* 3 squares */
+#b2{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+#b2>div{
+    width: 30%;
+    height: 80%;
+    background-color: #3E4158;
+    margin: 1%;
+    border-radius: 5%;
+    color: #F1ACBD;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "font_article";  
+    text-align: center;
+    transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+#b2> div> div{
+    padding: 0 5% 0 5%;
+}
+#b2 img{
+    height: 30%;
 }
