@@ -9,21 +9,22 @@
     <body> 
         <main> 
         
-            <section id="menu"> 
-                <ol> 
-                    <li><a href="index.html"> Main </a></li>
-                    <li><a href="gallery.html"> Gallery </a></li>
-                    <li><a href="about.html"> About us </a></li>
-                    <li><a href="3d.html"> 3D </a></li>
-                </ol>
-            </section>
-
             <article id="article">
+                
                 <div id="header">
-                    <h1> Future  </h1>
-                    <h2> School </h2>
-                    <div id="aboutus"> technical educational project, the first stage of which took place in Poznań, is "School of the future" </div>
-                    <button><a href="about.html">About us</a></button>
+                    <section id="menu"> 
+                        <ol> 
+                            <li><a href="index.html"> Main </a></li>
+                            <li><a href="gallery.html"> Gallery </a></li>
+                            <li><a href="about.html"> About us </a></li>
+                            <li><a href="3d.html"> 3D </a></li>
+                        </ol>
+                    </section>
+                        <h1> Future  </h1>
+                        <h2 id="h2_1"> School <img src="../images/star.png" alt="spinning star"></h2>
+                       
+                        <div id="aboutus"> technical educational project, the first stage of which took place in Poznań, is "School of the future" </div>
+                        <button><a href="about.html">About us</a></button>
                 </div>
                 <div id="blocks"> 
                     <div id="b1"> 
@@ -65,7 +66,39 @@
             </footer>
         </main>
         <script> 
-          
+            
+            
+           /*
+            let i = 1;
+            let list = [" ", " ", " ", " ", " ", " "];
+            let list2 = ["S", "C", "H", "O", "O", "L"];
+            let z;
+            let letters = ["A","B","C","D","E","F","G","H","J","I","K","L","M","N"];
+            var proba2 = setTimeout(() => funkcja2(0,0), 100);
+            function funkcja2(first, second){
+                if(second >= 6) return;
+                z = parseInt(Math.random()*10);
+                console.log(second);
+                
+                list[second] = letters[z];
+                
+                if(first > 10){
+                    list[second-1] = list2[second-1];
+                    second += 1;
+                    first = 0;
+                    
+                    
+                }
+                
+                
+                h2_1.innerHTML = list[0]+list[1]+list[3]+list[4]+list[5];
+                
+                console.log(h2_1.innerHTML);
+                let proba3 = setTimeout(() => funkcja2(first+1, second), 100);
+            }
+                
+            */
+            
         </script>
     </body>
 

@@ -12,6 +12,7 @@
 }
 body{
     margin: 0;
+    background-color: white;
 }
 main{
   
@@ -20,10 +21,11 @@ main{
     flex-direction: column;
 }
 /*menu - style*/
+/*menu - style*/
 #menu{
+    top: 0;
+    left:0;
     z-index: 2;
-    background-color: midnightblue;
-    color: white;
     position: fixed;
     width: 100%;
     height: 5em;
@@ -31,7 +33,7 @@ main{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #1D2440;
+    background-color: black;
     
 }
 #menu > ol{
@@ -54,7 +56,7 @@ main{
     }
 }
 #menu li a{
-    color: #F1AEBF;
+    color: white;
     font-family: "font_article";
     text-decoration: none;
     font-size: calc(0.5vw + 0.6vh + 5px);
@@ -66,7 +68,7 @@ main{
     bottom: 1px;
     width: 100%;
     height: 3px;
-    background-color:#F1AEBF ; /* Kolor linii */
+    background-color:white ; /* Kolor linii */
     transform: scaleX(0); /* Początkowo linia niewidoczna */
     transition: transform 0.4s ease; /* Animacja pojawienia się linii */
 }
@@ -79,7 +81,7 @@ main{
 article{
     z-index: 1;
     position: relative;
-    top: 5em;
+    
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,21 +97,54 @@ article{
     padding: 5%;
     width: 100%;
     height: 50vh;
-    background-color: #1D2440;
-}
+    padding-top:7em; 
+    background: linear-gradient(132deg, #c57ab3, #f79490, #f6bf81, #f5e9dd);
+    background-size: 300% 100%;
 
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+}
+#header img{
+    width: 10vh;
+    animation: spin 6s linear reverse infinite;
+    
+}
+@keyframes spin{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:74% 0%}
+    50%{background-position:27% 100%}
+    100%{background-position:74% 0%}
+}
 h1{
     font-size: 12vh;
     margin: 0;
     font-family: "font_header";
-    color: #F1AEBF;
+    color: black;
     
 }
 h2{
  font-family: "font_header";
     font-size: 10vh;
     margin: 0;
-    color: #F1AEBF;
+    color: black;
 }
 button{
     margin-top: 3%;
@@ -118,43 +153,47 @@ button{
     border-radius: 30px;
     max-width: 200px;
     min-width: 100px;
-    font-size: 100%;
-    background-color: #F1AEBF;
+    font-size: 120%;
+    border: 3px solid black;
+    background-color: rgba(0,0,0, .01) ;
     color: #1D2440;
     transition: all 0.3s linear;
 }
 button:hover{
-    background-color: #1D2440;
-    border: 2px solid #F1AEBF;
+    background-color: rgba(100,100,100, .35) ;
+    width: 17%;
+    height: 11%;
     
 }
 button:hover a{
-    color: #F1AEBF ;
+    color: background-color: rgba(100,100,100, .35) ;
+    font-size: 110%;
 }
 button>a{
     text-decoration: none;
     color: black;
     font-family: font_article;
     font-weight: 700;
+    transition: all 0.3s linear;
     
 }
 #aboutus{
     font-size: 100%;
     font-family: "font_article";
-    color: #F1AEBF;
+    color: black;
 }
 /*footer*/
 footer{
     height: 10vh;
     width: 100%;
     position: relative;
-    top: 5em;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #3E4158;
-    color: #C7B8BC;
+    background-color: #F89692;
+    color: black;
     font-family: "font_article"; 
     font-weight: 700;
     

@@ -2,7 +2,7 @@ h3{
     font-family: "font_header";
 }
 article{
-    background-color: #1C233F;
+    background-color:bisque;
 }
 /*blocks, div in article - style*/
 #blocks{
@@ -45,11 +45,11 @@ article{
 }
 #b2>div{
     width: 30%;
-    height: 80%;
-    background-color: #3E4158;
+    height: 37vh;
+    background-color: black;
     margin: 1%;
     border-radius: 5%;
-    color: #F1ACBD;
+    color: antiquewhite;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -59,10 +59,12 @@ article{
     transition: all 0.5s ease;
     &:hover{
         transform: scale(1.05);
+        background-color: #151515;
     }
 }
 #b2> div> div{
     padding: 0 5% 0 5%;
+    font-size:1.5vh;
 }
 #b2 img{
     height: 30%;

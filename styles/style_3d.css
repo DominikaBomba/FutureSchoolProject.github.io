@@ -1,0 +1,14 @@
+
+model-viewer{
+    background-color: black;
+    height: inherit;
+    width: inherit;
+   
+}
+article{
+    height: 60vh;
+    background-color: black;
+}
+footer{
+    bottom: 0;
+}
