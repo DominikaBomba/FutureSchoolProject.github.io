@@ -2,7 +2,7 @@ h3{
     font-family: "font_header";
 }
 article{
-    background-color:bisque;
+    background-color:white;
 }
 /*blocks, div in article - style*/
 #blocks{
@@ -20,10 +20,10 @@ article{
 #b1{
     width: 100%;
     height: 20vh;
-    background-color: antiquewhite;
+    background-color: white;
     margin: 0;
     padding: 5%;
-    color: antiquewhite;
+    color: white;
     font-family: "font_article2";
     background-image: url(../images/3d1.jpg);
     background-position: left;
@@ -49,7 +49,7 @@ article{
     background-color: black;
     margin: 1%;
     border-radius: 5%;
-    color: antiquewhite;
+    color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
