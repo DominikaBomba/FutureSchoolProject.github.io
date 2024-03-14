@@ -12,7 +12,7 @@
 }
 body{
     margin: 0;
-    background-color: white;
+    background-color: black;
 }
 main{
   
@@ -42,7 +42,7 @@ article{
     width: 100%;
     height: 50vh;
     padding-top:7em; 
-    background: linear-gradient(132deg, #c57ab3, #f79490, #f6bf81, #f5e9dd);
+    background: linear-gradient(132deg, #f6bf81, #f79490, #f6bf81, #f5e9dd);
     background-size: 300% 100%;
     -webkit-animation: AnimationName 3s ease infinite;
     -moz-animation: AnimationName 3s ease infinite;
@@ -79,7 +79,7 @@ article{
     100%{background-position:74% 0%}
 }
 h1{
-    font-size: 12vh;
+    font-size:calc(6vh + 6vw);
     margin: 0;
     font-family: "font_header";
     color: black;
@@ -87,7 +87,7 @@ h1{
 }
 h2{
  font-family: "font_header";
-    font-size: 10vh;
+    font-size: calc(6vh + 5vw);
     margin: 0;
     color: black;
 }
@@ -138,7 +138,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #F89692;
+    background-color: #F6BE82;
     color: black;
     font-family: "font_article"; 
     font-weight: 700;
@@ -215,6 +215,7 @@ footer img{
 /*menu for mobile phones*/
 @media all and (max-width: 900px){
 
+/*menu*/
     #menu {
       
        width: 100%;
