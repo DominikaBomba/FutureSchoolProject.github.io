@@ -5,6 +5,7 @@
         <title> School of the future</title>
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
         <link rel="stylesheet" type="text/css" href="../styles/style_gallery.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body> 
         <main> 
@@ -62,8 +63,12 @@
             let galleryImages = document.querySelectorAll("#bleft img");
             for(let i of galleryImages){
                 i.addEventListener("click", ()=> {
-                    rimage.setAttribute("src", i.getAttribute("src"));
-                    console.log(i.getAttribute("src"));
+                    $("#rimage").fadeOut(400);
+                    
+                    setTimeout(()=>{rimage.setAttribute("src", i.getAttribute("src")); }, 400);
+                    
+                    setTimeout(()=>{ $("#rimage").fadeIn(500);}, 400);
+
                 })
             
             

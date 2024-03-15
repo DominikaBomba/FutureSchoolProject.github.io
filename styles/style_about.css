@@ -1,14 +1,46 @@
 /*blocks, div in article - style*/
 #blocks{
-    margin-top: 2vh;
-    width: 70%;
+  margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    background: hsla(2, 87%, 77%, 1);
+background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 0%, hsla(0, 0%, 0%, 1) 40%, hsla(9, 28%, 5%, 1) 80%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     
 }
 #blocks > div{
-    width: 100%;
+    color: white;
+    width: 30%;
+    font-family: "font_article2";
     height: auto;
-    background-color: aqua;
-    display: flex;
-    margin-bottom: 10%;
+    background-color: black;
+    border: 1px solid grey;
+    border-radius: 8px;
+    
+    margin: 3%;
     padding: 5%;
+    
+}
+#blocks > div:nth-of-type(1){
+    width: 20%;
+}
+#blocks > div:nth-of-type(2){
+    width: 30%;
+}
+#blocks > div:nth-of-type(3){
+    width: 25%;
+}
+#blocks > div:nth-of-type(4){
+    width: 25%;
+}
+#blocks > div:nth-of-type(5){
+    width: 66%;
+}
+
+/*article*/
+article{
+
 }
