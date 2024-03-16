@@ -1,14 +1,14 @@
 @font-face{
     font-family: "font_header";
-    src: url(../images/font_header2.otf);
+    src: url(../images/fonts/font_header2.otf);
 }
 @font-face{
     font-family: "font_article";
-    src: url("../images/font_article.ttf");
+    src: url("../images/fonts/font_article.ttf");
 }
 @font-face{
     font-family: "font_article2";
-    src: url("../images/font_article2.otf");
+    src: url("../images/fonts/font_article2.otf");
 }
 body{
     margin: 0;
