@@ -145,13 +145,13 @@ footer img{
     
 }
 footer div{
-    font-size: 2vh;
+    font-size: 1.5vh;
     color: white;
 }
 
 /*menu - style*/
 
-@media all and (min-width: 1000px){
+@media all and (min-width: 900px){
     #menu2{
         top: 0;
         left:0;
@@ -213,7 +213,7 @@ footer div{
     
 }
 /*menu for mobile phones*/
-@media all and (max-width: 1000px){
+@media all and (max-width: 900px){
 
 /*menu*/
     #menu {
