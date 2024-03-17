@@ -25,14 +25,14 @@
     
 }
 /*phones*/
-@media all and (max-width: 900px){
+@media all screen and (max-width: 900px or max-device-width: 1000px){
     #blocks > div{
         width: 80%;
         font-size: 3vw;
 }
 }
 /*pc*/
-@media all and (min-width: 900px){
+@media all screen and (min-width: 900px or min-device-width: 1000px){
     #blocks>div{
         font-size: 2vh;
     }

@@ -151,7 +151,7 @@ footer div{
 
 /*menu - style*/
 
-@media all and (min-width: 900px){
+@media all screen and (min-width: 900px or min-device-width: 1000px){
     #menu2{
         top: 0;
         left:0;
@@ -213,7 +213,7 @@ footer div{
     
 }
 /*menu for mobile phones*/
-@media all and (max-width: 900px){
+@media all screen and (max-width: 900px or max-device-width: 1000px){
 
 /*menu*/
     #menu {
