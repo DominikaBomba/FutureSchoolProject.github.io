@@ -45,7 +45,7 @@ article{
    
 }
 /*media for phones */
-@media all and (max-width:900px or max-device-width: 1000px){
+@media all and (max-width:900px){
     #blocks{
         flex-direction: column;
         height: 70vh;
@@ -70,7 +70,7 @@ article{
 }
 }
 /*media for pc */
-@media all and (min-width:900px or min-device-width: 1000px){
+@media all and (min-width:900px){
     #blocks{
         flex-direction: row;
         height: 40vh;

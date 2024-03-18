@@ -31,7 +31,7 @@ background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 0%, hsla(0, 0%, 0%, 1
     transition: all 0.25s ease;
 
 }
-@media all and (max-width: 900px or max-device-width: 1000px){
+@media all and (max-width: 900px){
     #b1{
         height: 30vh;
         &:hover{
@@ -74,7 +74,7 @@ background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 0%, hsla(0, 0%, 0%, 1
        
     }
 }
-@media all and (min-width: 900px or min-device-width: 900px){
+@media all and (min-width: 900px){
     #b1{
         height: 20vh;
         &:hover{
@@ -124,5 +124,5 @@ background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 0%, hsla(0, 0%, 0%, 1
 }
 #b2> div> div{
     padding: 0 5% 0 5%;
-    font-size:1.5vh;
+    font-size:2vh;
 }
