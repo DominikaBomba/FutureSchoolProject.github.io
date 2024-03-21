@@ -72,6 +72,33 @@ article{
     
 }
 }
+@media all and (max-device-width:1000px){
+    #blocks{
+        flex-direction: column;
+        height: calc(20vh + 50vw + 20px);
+        
+    }
+    #bleft{
+        width: 80%;
+        padding: 1%;
+        height: 20vh; 
+        margin-bottom: 20px;
+    }
+    #bright{
+        border: 1px solid gray;
+        padding: 1%;
+        width: 80%;
+        height: 50vw;
+    }
+    #bright img{
+        width: 50vw;
+    }
+    #bleft img{
+        margin: 3%;
+        width: 15vh;
+    
+}
+}
 /*media for pc */
 @media all and (min-width:900px){
     #blocks{

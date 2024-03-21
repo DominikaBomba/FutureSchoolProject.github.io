@@ -35,6 +35,12 @@
         font-size: 3vw;
 }
 }
+@media all and (max-device-width: 1000px){
+    #blocks > div{
+        width: 80%;
+        font-size: 3vw;
+}
+}
 /*pc*/
 @media all and (min-width: 900px){
     #blocks>div{
