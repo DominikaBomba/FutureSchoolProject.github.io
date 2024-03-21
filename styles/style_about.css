@@ -1,6 +1,6 @@
 /*blocks, div in article - style*/
 #blocks{
-  margin-top: 5%;
+  padding-top: 5%;
     height: 100%;
     width: 100%;
     background: hsla(2, 87%, 77%, 1);
@@ -19,20 +19,24 @@
     background-color: black;
     border: 1px solid grey;
     border-radius: 8px;
-  
     margin: 3%;
     padding: 5%;
+    transition: all 0.5s ease;
+        &:hover{
+            background-color: rgba(0,0,0,0.5);
+            transform: scale(1.02);
+    }
     
 }
 /*phones*/
-@media all screen and (max-width: 900px){
+@media all and (max-width: 900px){
     #blocks > div{
         width: 80%;
         font-size: 3vw;
 }
 }
 /*pc*/
-@media all screen and (min-width: 900px){
+@media all and (min-width: 900px){
     #blocks>div{
         font-size: 2vh;
     }

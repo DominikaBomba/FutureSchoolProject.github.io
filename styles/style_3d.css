@@ -2,10 +2,12 @@
 model-viewer{
     background-color: black;
     height: inherit;
-    width: inherit;
+    width: 50%;
    
 }
 article{
+    display: flex;
+    flex-direction: row;
     height: 60vh;
     background-color: black;
 }

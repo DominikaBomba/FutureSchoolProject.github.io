@@ -22,9 +22,9 @@ background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 0%, hsla(0, 0%, 0%, 1
     background-color: white;
     margin: 0;
     padding: 5%;
-    color: white;
+    color: black;
     font-family: "font_article2";
-    background-image: url(../images/images_gallery/3d1.jpg);
+    background-image: url(../images/images_gallery/blur_classroom.png);
     background-position: left;
     background-size: cover;
     text-align: center;

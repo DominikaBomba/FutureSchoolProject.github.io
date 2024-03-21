@@ -10,8 +10,7 @@ h3{
 }
 article{
     width: 100%;
-    
-    background-color: white ;
+    background-color: black ;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -19,20 +18,21 @@ article{
 }
 
 #blocks{
-    
+    width: 100%;
+        padding: 5%;
+        background: radial-gradient(circle, hsla(2, 87%, 77%, 0.5) 10%, hsla(0, 0%, 0%, 1) 30%, hsla(9, 28%, 5%, 1) 80%);
         display: flex;
         justify-content: space-around; 
-        
         align-items: center;
 }
 #bleft{
+        border: 1px solid gray;
         background-color:  black;
-      
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap; 
-        border-radius: 10px;
+        border-radius: 3px;
 }
 #bleft2{
     height: 90%;
@@ -41,31 +41,34 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+   
    
 }
 /*media for phones */
 @media all and (max-width:900px){
     #blocks{
         flex-direction: column;
-        height: 70vh;
+        height: calc(20vh + 50vw + 20px);
+        
     }
     #bleft{
-        width: 100%;
+        width: 80%;
         padding: 1%;
-        height: 30vh; 
+        height: 20vh; 
+        margin-bottom: 20px;
     }
     #bright{
+        border: 1px solid gray;
         padding: 1%;
-        width: 100%;
-        height: 30vh;
+        width: 80%;
+        height: 50vw;
     }
     #bright img{
-        width: 30vh;
+        width: 50vw;
     }
     #bleft img{
         margin: 3%;
-        width: 14vh;
+        width: 15vh;
     
 }
 }
@@ -73,25 +76,29 @@ article{
 @media all and (min-width:900px){
     #blocks{
         flex-direction: row;
-        height: 40vh;
+        height: 65vh;
     }
     #bleft{
-        width: 45%;
+        width: 20%;
         padding: 1%;
-        height: 40vh;
+        height: 60vh;
 
     }
     #bright{
+        border: 1px solid gray;
        padding: 1%;
-        width: 45%;
-       height: 40vh;
+        width: 70%;
+       height: 60vh;
     }
     #bright img{
-        width: 32vh;
+        height: 70%;
     }
     #bleft img{
         margin: 3%;
         width: 14vh;
+    }
+    #bleft2{
+         flex-wrap: wrap; 
     }
 }
 
@@ -110,7 +117,4 @@ article{
     
     padding: 3%;
     
-}
-#blocks{
-    margin: 5%;
 }

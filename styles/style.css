@@ -110,7 +110,8 @@ button:hover{
     
 }
 button:hover a{
-    color: background-color: rgba(100,100,100, .35) ;
+     
+   
     font-size: 100%;
 }
 button>a{
