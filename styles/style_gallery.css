@@ -44,8 +44,25 @@ article{
    
    
 }
+    /*right scroll gallery*/
+#bright{
+    background-color:  black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+#rimage{
+  
+    
+    padding: 3%;
+    
+}
+
 /*media for phones */
-@media all and (max-width:900px){
+@media all and (max-width:1000px){
     #blocks{
         flex-direction: column;
         height: calc(20vh + 50vw + 20px);
@@ -100,7 +117,7 @@ article{
 }
 }
 /*media for pc */
-@media all and (min-width:900px){
+@media all and (min-width:1000px){
     #blocks{
         flex-direction: row;
         height: 65vh;
@@ -129,19 +146,3 @@ article{
     }
 }
 
-    /*right scroll gallery*/
-#bright{
-    background-color:  black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    
-}
-
-#rimage{
-  
-    
-    padding: 3%;
-    
-}

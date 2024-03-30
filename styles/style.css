@@ -124,35 +124,11 @@ button>a{
 }
 
 
-/*footer*/
-footer{
-    height: 10vh;
-    width: 100%;
-    position: relative;
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: black;
-    border-top: 1px solid grey;
-    color: black;
-    font-family: "font_article2"; 
-    font-weight: 700;
-    
-}
-footer img{
-    height: 90%;
-    
-}
-footer div{
-    font-size: 1.5vh;
-    color: white;
-}
+
 
 /*menu - style*/
 
-@media all and (min-width: 900px){
+@media all and (min-width: 1000px){
     #menu2{
         top: 0;
         left:0;
@@ -211,10 +187,35 @@ footer div{
     #menu input{
         display: none;
     }
+    /*footer*/
+    footer{
+        height: 10vh;
+        width: 100%;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        border-top: 1px solid grey;
+        color: black;
+        font-family: "font_article2"; 
+        font-weight: 700;
+
+    }
+    footer img{
+        height: 90%;
+
+    }
+    footer div{
+        font-size: 1.5vh;
+        color: white;
+    }
     
 }
-/*menu for mobile phones*/
-@media all and (max-width: 900px){
+
+@media all and (max-width: 1000px){
 
 /*menu*/
     #menu {
@@ -338,6 +339,31 @@ footer div{
     #menu input:checked ~ ul
     {
       transform: none;
+    }
+    /*footer*/
+    footer{
+        height: 10vh;
+        width: 100%;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        border-top: 1px solid grey;
+        color: black;
+        font-family: "font_article2"; 
+        font-weight: 700;
+
+    }
+    footer img{
+        height: 90%;
+
+    }
+    footer div{
+        font-size: 1.5vh;
+        color: white;
     }
 }
 @media all and (max-device-width: 1000px){
@@ -464,5 +490,30 @@ footer div{
     #menu input:checked ~ ul
     {
       transform: none;
+    }
+    /*footer*/
+    footer{
+        height: 10vh;
+        width: 100%;
+        position: relative;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        border-top: 1px solid grey;
+        color: black;
+        font-family: "font_article2"; 
+        font-weight: 700;
+
+    }
+    footer img{
+        height: 40%;
+
+    }
+    footer div{
+        font-size: 1.5vh;
+        color: white;
     }
 }
